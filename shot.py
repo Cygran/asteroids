@@ -4,9 +4,9 @@ from constants import SHOT_RADIUS
 
 class Shot(CircleShape):
     def __init__(self, x, y, velocity):
-        super().__init__(x, y)
+        super().__init__(x, y, SHOT_RADIUS)
         self.color = (255, 255, 255)
-        self.radius = SHOT_RADIUS
+        
         self.velocity = velocity
     
     def draw(self, screen):
